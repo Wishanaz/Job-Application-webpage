@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9EFDB;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: #EBD9B4;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 3px 4px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+.small{
+    font-size: 20px;
+    color: rgb(18, 18, 94);
+}
+
+.box h1{
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.form-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+select option:checked{
+    margin:40px;
+    background: #638889;
+    color:#2a663e;
+    text-shadow:0 1px 0 rgba(248, 143, 143, 0.4);
+}
+option:not(:checked) { 
+    background-color: #f5cfb6; 
+}
+
+input, select, textarea{
+    padding: 6px 10px;
+    border: 2px solid #9DBC98;
+    border-radius: 6px;
+    font-size: 15px;
+    
+}
+
+
+input:focus{
+    outline-color: #9DBC98;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: #99be94;
+    color: white;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: 0.4s ease-in;
+}
+
+button:hover{
+    transition: 0.3s ease-out;
+    color: #2a663e;
+    background-color: rgb(111, 235, 187);
+    transition: 0.3s ease-out;
+    cursor:progress;
+}
+
+.textarea-control{
+    grid-column: 1 / span 2;
+}
+
+.textarea-control textarea {
+    width: 100%;
+}
+
+@media (max-width:460px){
+.textarea-control{
+    grid-column: 1 / span 1;
+}
+}
+
+
+footer{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2a663e;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
